@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#6495ED"
+    tools:context=".ProductsActivity">
+
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/btn_pro_catalog_menu"
+            android:paddingLeft="20dp"
+            android:paddingRight="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:text="@string/catalog"
+            android:textColor="#36648B" />
+
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#36648B"
+        android:text="@string/list_products"
+        android:textColor="@android:color/white"/>
+
+    <ListView
+        android:background="@android:color/white"
+        android:listSelector="#36648B"
+        android:layout_marginTop="20dp"
+        android:id="@+id/pro_lv"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"></ListView>
+    <TextView
+        android:paddingBottom="10dp"
+        android:id="@+id/txtAbout"
+        android:gravity="bottom"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="#36648B"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="appName">ĐỒ ÁN</string>
+    <string name="welcome">Hé lô cưng!</string>
+    <string name="username">Tên đăng nhập</string>
+    <string name="password">Mật khẩu</string>
+    <string name="login">ĐĂNG NHẬP</string>
+    <string name="catalog">DANH MỤC</string>
+    <string name="list_catalog">DANH SÁCH DANH MỤC ĐIỆN THOẠI</string>
+    <string name="insert">Thêm</string>
+    <string name="update">Cập nhật</string>
+    <string name="delete">Xóa</string>
+    <string name="info">Thông tin</string>
+    <string name="products">ĐIỆN THOẠI</string>
+    <string name="list_products">DANH SÁCH ĐIỆN THOẠI</string>
+    <string name="id">MÃ</string>
+    <string name="name">TÊN</string>
+    <string name="ok">ĐỒNG Ý</string>
+    <string name="price">GIÁ</string>
+    <string name="discount">GIÁ ĐÃ GIẢM</string>
+    <string name="itemCheck">ĐÙA À! CHỌN TRƯỚC ĐI, LÀM GÌ TÍNH SAU!</string>
+    <string name="enable">NHÀ ĐÔNG CON CHÁU, KHÔNG GIẾT ĐƯỢC ĐÂU!</string>
+    <string name="nullUsername">CHƯA ĐIỀN TÊN ĐĂNG NHẬP KÌA!</string>
+    <string name="nullPassword">Ơ, KHÔNG THẤY NHẬP MẬT KHẨU GÌ CẢ!</string>
+    <string name="errorUssernameAndPassword">KIỂM TRA LẠI LẦN NỮA XEM, NGHIÊM TÚC ĐẤY!</string>
+    <string name="errorPasswordLength">LẠI SAI RỒI, MẬT KHẨU NGẮN QUÁ, 4 KÝ TỰ HƠN ĐI!</string>
+    <string name="no">ĐÙA THÔI</string>
+    <string name="yes">HỎA THIÊU LIỀN</string>
+    <string name="noMess">Ờ, rốt cuộc cũng không xóa!</string>
+    <string name="yesMess">Mình cũng muốn xóa nó lâu rồi!</string>
+    <string name="question">Xác nhận</string>
+    <string name="questionMess">Xóa thật à?</string>
+    <string name="stuMarker">Đây, STU ở đây!</string>
+    <string name="title_activity_maps">Bản đồ</string>
+    <string name="about">Về chúng tôi</string>
+    <string name="aboutInfo">Ngày sản xuất: 04 - 12 - 2018 \n
+                            Đơn vị quản lý: concatpboi.salty.vn \n
+                            CEO: Nguyễn Thanh Hiền \n
+                            Ứng dụng giúp bạn quản lý điện thoại.</string>
+</resources>

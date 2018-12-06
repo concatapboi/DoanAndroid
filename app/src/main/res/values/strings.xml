@@ -1,0 +1,39 @@
+<resources>
+    <string name="appName">PROJECT</string>
+    <string name="welcome">Welcome and joyful!</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="catalog">CATALOG</string>
+    <string name="list_catalog">THE CATALOG ROLL</string>
+    <string name="insert">Insert</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="info">Info</string>
+    <string name="products">PRODUCTS</string>
+    <string name="list_products">THE PRODUCTS ROLL</string>
+    <string name="id">ID</string>
+    <string name="name">NAME</string>
+    <string name="ok">OK</string>
+    <string name="price">PRICE</string>
+    <string name="discount">DISCOUNT</string>
+    <string name="itemCheck">PLZ, CHOOSE ONE!</string>
+    <string name="enable">HAVING DATA, YOU CANNOT ERASE!</string>
+    <string name="nullUsername">NULL USERNAME</string>
+    <string name="nullPassword">NULL PASSWORD</string>
+    <string name="errorUssernameAndPassword">SOMETHING IS WRONG! UNLIKE!</string>
+    <string name="errorPasswordLength">PASSWORD MUST BE LESS 4 CHARACTERS!</string>
+    <string name="noMess">Oh, we will keep it</string>
+    <string name="yesMess">Alright, say \"Bye\" to your ex!</string>
+    <string name="question">Question</string>
+    <string name="questionMess">Are you sure?</string>
+    <string name="no">NO</string>
+    <string name="yes">SURE</string>
+    <string name="stuMarker">Hey, STU here!</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="about">About us</string>
+    <string name="aboutInfo">Created at: 04 - 12 - 2018 \n
+                            Company: concatpboi.salty.vn \n
+                            CEO: Nguyen Thanh Hien \n
+                            This app help you manage your Phone products.</string>
+</resources>
