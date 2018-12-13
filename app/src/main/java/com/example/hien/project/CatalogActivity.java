@@ -159,8 +159,8 @@ public class CatalogActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        Data.catArrList.clear();
-        Data.proArrList.clear();
+//        Data.catArrList.clear();
+//        Data.proArrList.clear();
 //        Intent intentBack = new Intent(this, LoginActivity.class);
 //        startActivity(intentBack);
         finish();

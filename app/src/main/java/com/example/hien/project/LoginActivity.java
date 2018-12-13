@@ -33,7 +33,6 @@ public class LoginActivity extends AppCompatActivity {
     private void addControls() {
         ActionBar actionBar = getSupportActionBar();
         actionBar.setTitle(getResources().getString(R.string.welcome));
-        createData();
         txtAbout = findViewById(R.id.txtAbout);
         txtAbout.setText(android.text.Html.fromHtml("<a href=\"#\">"+getResources().getString(R.string.about)+"</a>"));
         btnLoginOk = findViewById(R.id.btn_login_ok);
@@ -95,6 +94,7 @@ public class LoginActivity extends AppCompatActivity {
                     txtLoginPass.requestFocus();
                 }else {
                     if(txtLoginUsername.getText().toString().trim().compareTo("daica97")==0 && txtLoginPass.getText().toString().compareTo("123456")==0){
+                        createData();
                         startActivity(loginIntent);
                     } else {
                         Toast.makeText(LoginActivity.this,R.string.errorUssernameAndPassword,Toast.LENGTH_LONG).show();
