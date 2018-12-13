@@ -57,7 +57,7 @@ public class CatalogDataActivity extends AppCompatActivity {
         btnCatDataOk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Catalog newCat = new Catalog(Integer.parseInt(txtCatDataId.getText().toString()),txtCatDataName.getText().toString());
+                Catalog newCat = new Catalog(Integer.parseInt(txtCatDataId.getText().toString()),txtCatDataName.getText().toString().trim());
                 if(check==-1)
                     Data.catArrList.add(newCat);
                 else {
@@ -72,6 +72,7 @@ public class CatalogDataActivity extends AppCompatActivity {
                     Data.updateCatNameInProductsArr(old,newCat);
                 }
                 startActivity(dataIntentForOk);
+                finish();
             }
         });
     }
@@ -85,6 +86,8 @@ public class CatalogDataActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        Intent intent = new Intent(CatalogDataActivity.this,CatalogActivity.class);
+        startActivity(intent);
         finish();
     }
 }

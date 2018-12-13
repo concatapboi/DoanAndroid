@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="appName">ĐỒ ÁN</string>
-    <string name="welcome">Hé lô cưng!</string>
+    <string name="welcome">Hé lô!</string>
     <string name="username">Tên đăng nhập</string>
     <string name="password">Mật khẩu</string>
     <string name="login">ĐĂNG NHẬP</string>
@@ -34,7 +34,7 @@
     <string name="title_activity_maps">Bản đồ</string>
     <string name="about">Về chúng tôi</string>
     <string name="aboutInfo">Ngày sản xuất: 04 - 12 - 2018 \n
-                            Đơn vị quản lý: concatpboi.salty.vn \n
-                            CEO: Nguyễn Thanh Hiền \n
+                            Đơn vị quản lý: STU \n
+                            Sáng lập: Nguyễn Thanh Hiền \n
                             Ứng dụng giúp bạn quản lý điện thoại.</string>
 </resources>

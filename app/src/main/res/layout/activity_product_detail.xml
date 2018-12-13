@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#6495ED"
+    android:background="#32CD32"
     tools:context=".ProductDetailActivity">
 
     <ImageView
@@ -29,25 +29,27 @@
             android:orientation="horizontal">
             <TextView
                 android:padding="10dp"
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/id"
-                android:textColor="#36648B"/>
+                android:textColor="#006400"/>
             <TextView
                 android:padding="10dp"
                 android:id="@+id/txt_pro_detail_id"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#36648B"
+                android:textColor="#006400"
                 android:textStyle="bold"/>/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#36648B"
+            android:background="#32CD32"
             android:orientation="horizontal">
             <TextView
                 android:padding="10dp"
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
@@ -65,24 +67,26 @@
             android:orientation="horizontal">
             <TextView
                 android:padding="10dp"
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/catalog"
-                android:textColor="#36648B"/>
+                android:textColor="#006400"/>
 
             <Spinner
                 android:id="@+id/spinner_pro_detail_catalog_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:dropDownSelector="@android:color/white" />
+                android:dropDownSelector="#006400" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#36648B"
+            android:background="#32CD32"
             android:orientation="horizontal">
             <TextView
                 android:padding="10dp"
+                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@android:color/white"
@@ -103,12 +107,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/discount"
-                android:textColor="#36648B"/>
+                android:textColor="#006400"/>
             <EditText
                 android:id="@+id/txt_pro_detail_discount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="#36648B" />
+                android:textColor="#006400" />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
@@ -123,12 +127,12 @@
             android:paddingLeft="40dp"
             android:paddingRight="40dp"
             android:layout_width="wrap_content"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:background="@android:color/white"
             android:text="@string/ok"
             android:textSize="30dp"
             android:textStyle="bold"
-            android:textColor="#36648B"/>
+            android:textColor="#006400"/>
     </LinearLayout>
 
 </LinearLayout>

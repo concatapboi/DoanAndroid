@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#6495ED"
+    android:background="#32CD32"
     android:padding="20dp"
     tools:context=".CatalogDataActivity"
     android:gravity="center">
@@ -14,9 +14,9 @@
         android:layout_width="250dp"
         android:layout_height="100dp"
         android:textStyle="bold"
-        android:textColor="#36648B"
-        android:textSize="50dp"
-        android:gravity="center"/>
+        android:textColor="#006400"
+        android:textAlignment="center"
+        android:textSize="50dp" />
     <LinearLayout
         android:layout_marginTop="20dp"
         android:layout_width="match_parent"
@@ -25,7 +25,8 @@
         android:background="@android:color/white"
         android:padding="20dp">
         <TextView
-            android:textColor="#36648B"
+            android:textStyle="bold"
+            android:textColor="#006400"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="@string/id"/>
@@ -34,7 +35,7 @@
             android:id="@+id/txt_cat_data_id"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#36648B"
+            android:textColor="#006400"
             android:textStyle="bold"/>
     </LinearLayout>
     <LinearLayout
@@ -46,7 +47,8 @@
         android:padding="20dp">
 
         <TextView
-            android:textColor="#36648B"
+            android:textColor="#006400"
+            android:textStyle="bold"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:text="@string/name" />
@@ -54,7 +56,7 @@
             android:id="@+id/txt_cat_data_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#36648B"
+            android:textColor="#006400"
             android:textStyle="bold"/>
     </LinearLayout>
     <Button
@@ -66,7 +68,7 @@
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:text="@string/ok"
-        android:textSize="50dp"
+        android:textSize="40dp"
         android:textStyle="bold"
-        android:textColor="#36648B"/>
+        android:textColor="#006400"/>
 </LinearLayout>

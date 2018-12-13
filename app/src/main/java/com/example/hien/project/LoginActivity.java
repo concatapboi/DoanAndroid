@@ -94,9 +94,8 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this,R.string.errorPasswordLength,Toast.LENGTH_LONG).show();
                     txtLoginPass.requestFocus();
                 }else {
-                    if(txtLoginUsername.getText().toString().compareTo("daica97")==0 && txtLoginPass.getText().toString().compareTo("123456")==0){
+                    if(txtLoginUsername.getText().toString().trim().compareTo("daica97")==0 && txtLoginPass.getText().toString().compareTo("123456")==0){
                         startActivity(loginIntent);
-                        finish();
                     } else {
                         Toast.makeText(LoginActivity.this,R.string.errorUssernameAndPassword,Toast.LENGTH_LONG).show();
                         txtLoginUsername.requestFocus();
@@ -104,5 +103,11 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finish();
     }
 }

@@ -83,6 +83,7 @@ public class ProductsActivity extends AppCompatActivity {
                 proIntent = new Intent(ProductsActivity.this, ProductDetailActivity.class);
                 proIntent.putExtra("ProitemID",Data.proArrList.get(position).getProID());
                 startActivity(proIntent);
+                finish();
                 return false;
             }
         });
@@ -100,12 +101,14 @@ public class ProductsActivity extends AppCompatActivity {
             case R.id.menu_insert:
                 proIntent = new Intent(this, ProductDetailActivity.class);
                 startActivity(proIntent);
+                finish();
                 break;
             case R.id.menu_update:
                 proIntent = new Intent(this, ProductDetailActivity.class);
                 if(pos>=0) {
                     proIntent.putExtra("ProitemID",Data.proArrList.get(pos).getProID());
                     startActivity(proIntent);
+                    finish();
                 }else Toast.makeText(this, R.string.itemCheck, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.menu_delete:
@@ -129,7 +132,7 @@ public class ProductsActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Toast.makeText(ProductsActivity.this, R.string.yesMess, Toast.LENGTH_SHORT).show();
-                Data.catArrList.remove(proAdap.getItem(position));
+                Data.proArrList.remove(proAdap.getItem(position));
                 proArr.remove(position);
                 proAdap.notifyDataSetChanged();
             }
@@ -147,6 +150,8 @@ public class ProductsActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+//        Intent intent = new Intent(ProductsActivity.this,CatalogActivity.class);
+//        startActivity(intent);
         finish();
     }
 }

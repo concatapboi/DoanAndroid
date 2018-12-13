@@ -84,6 +84,7 @@ public class CatalogActivity extends AppCompatActivity {
                 catIntent.putExtra("CatitemID",catArr.get(pos).getCatId());
                 catIntent.putExtra("Choice",getResources().getString(R.string.info));
                 startActivity(catIntent);
+                finish();
                 return false;
             }
         });
@@ -102,6 +103,7 @@ public class CatalogActivity extends AppCompatActivity {
                 catIntent = new Intent(this, CatalogDataActivity.class);
                 catIntent.putExtra("Choice", getResources().getString(R.string.insert));
                 startActivity(catIntent);
+                finish();
                 break;
             case R.id.menu_update:
                 catIntent = new Intent(this, CatalogDataActivity.class);
@@ -110,6 +112,7 @@ public class CatalogActivity extends AppCompatActivity {
                     catIntent.putExtra("Choice", getResources().getString(R.string.update));
                     pos=-1;
                     startActivity(catIntent);
+                    finish();
                 }else Toast.makeText(this, R.string.itemCheck, Toast.LENGTH_SHORT).show();
                 break;
             case R.id.menu_delete:
@@ -158,7 +161,8 @@ public class CatalogActivity extends AppCompatActivity {
         super.onBackPressed();
         Data.catArrList.clear();
         Data.proArrList.clear();
-        Intent intentBack = new Intent(this, LoginActivity.class);
-        startActivity(intentBack);
+//        Intent intentBack = new Intent(this, LoginActivity.class);
+//        startActivity(intentBack);
+        finish();
     }
 }

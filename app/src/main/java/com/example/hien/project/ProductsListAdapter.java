@@ -72,6 +72,21 @@ public class ProductsListAdapter extends BaseAdapter {
             case "xiaomi":
                 holder.imgProCustomListShow.setImageResource(R.drawable.xiaomi);
                 break;
+            case "vivo":
+                holder.imgProCustomListShow.setImageResource(R.drawable.vivo);
+                break;
+            case "blackberry":
+                holder.imgProCustomListShow.setImageResource(R.drawable.blackberry);
+                break;
+            case "lg":
+                holder.imgProCustomListShow.setImageResource(R.drawable.lg);
+                break;
+            case "microsoft":
+                holder.imgProCustomListShow.setImageResource(R.drawable.windowsphone);
+                break;
+            case "demo":
+                holder.imgProCustomListShow.setImageResource(R.drawable.demo);
+                break;
         }
         return convertView;
     }

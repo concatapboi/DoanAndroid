@@ -89,6 +89,21 @@ public class ProductDetailActivity extends AppCompatActivity {
                         case "xiaomi":
                             imgProDetailShow.setImageDrawable(getDrawable(R.drawable.xiaomi));
                             break;
+                        case "lg":
+                            imgProDetailShow.setImageDrawable(getDrawable(R.drawable.lg));
+                            break;
+                        case "vivo":
+                            imgProDetailShow.setImageDrawable(getDrawable(R.drawable.vivo));
+                            break;
+                        case "microsoft":
+                            imgProDetailShow.setImageDrawable(getDrawable(R.drawable.windowsphone));
+                            break;
+                        case "blackberry":
+                            imgProDetailShow.setImageDrawable(getDrawable(R.drawable.blackberry));
+                            break;
+                        case "demo":
+                            imgProDetailShow.setImageDrawable(getDrawable(R.drawable.demo));
+                            break;
                     }
                     break;
                 }
@@ -102,28 +117,39 @@ public class ProductDetailActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Product newPro;
                 int temptID = Integer.parseInt(txtProDetailID.getText().toString());
-                String temptName = txtProDetailName.getText().toString();
+                String temptName = txtProDetailName.getText().toString().trim();
                 String temptCatName =spinnerProDetailCatName.getSelectedItem().toString();
                 String temptImgName="";
-                switch(temptCatName){
-                    case "IPhone":
+                switch(temptCatName.replace(" ","").toLowerCase()){
+                    case "iphone":
                         temptImgName = "apple";
                         break;
-                    case "SamSung":
+                    case "samsung":
                         temptImgName = "samsung";
                         break;
-                    case "Oppo":
+                    case "oppo":
                         temptImgName = "oppo";
                         break;
-                    case "Huawei":
+                    case "huawei":
                         temptImgName = "huawei";
                         break;
-                    case "Xiaomi":
+                    case "xiaomi":
                         temptImgName = "xiaomi";
                         break;
-                    case "LG":
+                    case "lg":
                         temptImgName = "lg";
                         break;
+                    case "vivo":
+                        temptImgName = "vivo";
+                        break;
+                    case "microsoft":
+                        temptImgName = "microsoft";
+                        break;
+                    case "blackberry":
+                        temptImgName = "blackberry";
+                        break;
+                    default :
+                        temptImgName = "demo";
                 }
                 int temptPrice = Integer.parseInt(txtProDetailPrice.getText().toString());
                 int temptDiscount = Integer.parseInt(txtProDetailDiscount.getText().toString());
@@ -142,6 +168,7 @@ public class ProductDetailActivity extends AppCompatActivity {
 
                 }
                 startActivity(detailIntentForOk);
+                finish();
             }
         });
     }
@@ -155,6 +182,8 @@ public class ProductDetailActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+        Intent intent = new Intent(ProductDetailActivity.this,ProductsActivity.class);
+        startActivity(intent);
         finish();
     }
 }
